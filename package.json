@@ -1,7 +1,7 @@
 {
     "name": "electron-update-test",
     "productName": "electron-update-test",
-    "version": "1.0.1",
+    "version": "2.0.1",
     "description": "My Electron application description",
     "repository": "https://github.com/jeroenmj/electron-update-test",
     "main": "src/index.js",
