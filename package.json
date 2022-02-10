@@ -1,27 +1,22 @@
 {
-  "name": "electron-update-test",
+  "name": "auto-update-example",
+  "productName": "auto-update-example",
   "version": "1.0.0",
-  "description": "Test update",
-  "main": "index.js",
+  "description": "My Electron application description",
+  "main": "src/index.js",
   "scripts": {
-    "test": "test",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "author": "jeroen",
-  "license": "ISC",
-  "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.63",
-    "@electron-forge/maker-deb": "^6.0.0-beta.63",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
-    "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "^17.0.0"
+  "keywords": [],
+  "author": {
+    "name": "Jeroen Klein Geltink",
+    "email": "j.kleingeltink@covadis.nl"
   },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
-  },
+  "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -29,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "electron_update_test"
+            "name": "auto_update_example"
           }
         },
         {
@@ -48,5 +43,16 @@
         }
       ]
     }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "electron": "17.0.0"
   }
 }
